@@ -16,6 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+chef_gem "multipart-post" do
+  action :upgrade
+end
+
+require 'multipart-post'
+
 chef_gem "slackr" do
   action :install
 end
